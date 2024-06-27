@@ -48,6 +48,7 @@ const Register = () => {
   useEffect(() => {
     if (error) {
       toast.error(error);
+      return toast.dark("Password!");
     }
     if (isLoggedIn) {
       history.push("/dashboard");
