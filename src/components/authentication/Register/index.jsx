@@ -6,10 +6,10 @@ import { toast } from "react-toastify";
 import { registerUser } from "../../../redux/actionCreators/authActionCreators";
 
 const Register = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [name, setName] = useState("Abhay");
+  const [email, setEmail] = useState("admin@abhaypp.com");
+  const [password, setPassword] = useState("Abhay12@");
+  const [confirmPassword, setConfirmPassword] = useState("Abhay12@");
   const [error, setError] = useState("");
 
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
